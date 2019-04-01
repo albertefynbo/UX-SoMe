@@ -88,18 +88,6 @@ header {
     border-bottom: none;
 }
 
-.slider {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.slider img {
-    width: 400px;
-    height: 300px;
-    display: flex;
-}
-
 .forside-tekst {
     width: 100%;
     display: flex;
@@ -323,13 +311,6 @@ img {vertical-align: middle;}
 }
 
 /* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -344,6 +325,41 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+.dropbtn {
+  background-color: #8EC1D8;
+  color: black;
+     font-size: 19px;
+    border: none;
+    width: 100%;
+    text-align: left;
+    padding: 0%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+    width: 100%;
+    text-align: left;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ededed;
+    z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ededed;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #8EC1D8;}
 
 /**********************************************/
 /*MEDIA QUERY LAPTOP AND ABOVE*/
